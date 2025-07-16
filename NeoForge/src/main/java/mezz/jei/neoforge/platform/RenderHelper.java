@@ -62,6 +62,7 @@ public class RenderHelper implements IPlatformRenderHelper {
 	@Override
 	public void renderTooltip(GuiGraphics guiGraphics, List<Either<FormattedText, TooltipComponent>> elements, int x, int y, Font font, ItemStack stack) {
 		guiGraphics.setComponentTooltipFromElementsForNextFrame(font, elements, x, y, stack);
+		guiGraphics.renderDeferredTooltip();
 	}
 
 	@Override
