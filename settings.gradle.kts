@@ -10,7 +10,6 @@ pluginManagement {
 		}
 		exclusiveMaven("https://maven.fabricmc.net/") {
 			includeGroup("net.fabricmc")
-			includeGroupByRegex("net\\.fabricmc\\..*")
 			includeGroup("fabric-loom")
 		}
 		exclusiveMaven("https://maven.neoforged.net/releases") {
